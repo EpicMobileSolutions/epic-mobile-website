@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Epic Mobile Solutions</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fa;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #061a40, #0077b6);
+            color: white;
+            padding: 20px 8%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #90e0ef;
+        }
+
+        .hero {
+            min-height: 500px;
+            padding: 100px 8%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(
+                rgba(6, 26, 64, 0.85),
+                rgba(0, 119, 182, 0.85)
+            );
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 750px;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #ffb703;
+            color: #061a40;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #ffd166;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #061a40;
+            font-size: 34px;
+            margin-bottom: 20px;
+        }
+
+        .section-description {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            text-align: center;
+            color: #555;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-card span {
+            display: block;
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            color: #0077b6;
+            margin-bottom: 12px;
+        }
+
+        .about {
+            background-color: #eaf6fb;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 850px;
+            margin: auto;
+            font-size: 18px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact-box {
+            max-width: 650px;
+            margin: 30px auto 0;
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-box a {
+            color: #0077b6;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: #061a40;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        @media (max-width: 650px) {
+            nav {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 12px;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Epic Mobile Solutions</div>
+
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <h1>Movilidad inteligente para tu negocio</h1>
+
+            <p>
+                Creamos soluciones móviles, aplicaciones y herramientas
+                digitales para modernizar los servicios de transporte.
+            </p>
+
+            <a class="button" href="#contacto">Solicitar información</a>
+        </section>
+
+        <section id="servicios">
+            <h2>Nuestros servicios</h2>
+
+            <p class="section-description">
+                Tecnología práctica para empresas, conductores y clientes que
+                necesitan una experiencia de transporte más rápida y eficiente.
+            </p>
+
+            <div class="services">
+                <article class="service-card">
+                    <span>📱</span>
+                    <h3>Aplicaciones móviles</h3>
+                    <p>
+                        Desarrollo de aplicaciones modernas para administrar
+                        reservas, viajes y servicios.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <span>🚐</span>
+                    <h3>Soluciones de transporte</h3>
+                    <p>
+                        Herramientas digitales para organizar vehículos,
+                        conductores, pasajeros y rutas.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <span>📍</span>
+                    <h3>Seguimiento de rutas</h3>
+                    <p>
+                        Sistemas para mejorar la planificación y el seguimiento
+                        de los servicios de transporte.
+                    </p>
+                </article>
+
+                <article class="service-card">
+                    <span>💻</span>
+                    <h3>Servicios digitales</h3>
+                    <p>
+                        Páginas web y plataformas adaptadas a las necesidades
+                        de cada empresa.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="about" id="nosotros">
+            <h2>Sobre nosotros</h2>
+
+            <p>
+                Epic Mobile Solutions es una microempresa dedicada a crear
+                soluciones tecnológicas para el sector del transporte.
+                Nuestro objetivo es conectar empresas y clientes mediante
+                herramientas móviles seguras, modernas y fáciles de utilizar.
+            </p>
+        </section>
+
+        <section class="contact" id="contacto">
+            <h2>Contacto</h2>
+
+            <p>
+                ¿Necesitas una solución móvil para tu empresa de transporte?
+                Comunícate con nosotros.
+            </p>
+
+            <div class="contact-box">
+                <h3>Epic Mobile Solutions</h3>
+
+                <p>
+                    Correo:
+                    <a href="mailto:info@epictransportation.com">
+                        info@epictransportation.com
+                    </a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 Epic Mobile Solutions. Todos los derechos reservados.
+        </p>
+    </footer>
+
+</body>
+</html>
